@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lex.IQ - Legal Argument Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1><span class="lexiq-logo">Lex.IQ</span> Legal Argument Generator</h1>
+        </header>
+        
+        <div class="input-section">
+            <textarea id="caseInput" placeholder="Describe your legal case in 2-3 sentences..."></textarea>
+            <div class="button-group">
+                <button id="generateBtn" class="primary-btn">Generates arguments</button>
+                <small class="law-hint">using Indian laws</small>
+                <button id="swapBtn" class="secondary-btn">Swap Sides</button>
+                <button id="simplifyBtn" class="tertiary-btn">Simplify Legalese</button>
+            </div>
+        </div>
+        
+        <div class="arguments-container">
+            <div class="argument-column plaintiff">
+                <div class="column-header">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1570/1570887.png" alt="Plaintiff" class="avatar">
+                    <h2>Plaintiff Arguments</h2>
+                </div>
+                <div id="plaintiffArguments" class="arguments-list"></div>
+            </div>
+            
+            <div class="argument-column defendant">
+                <div class="column-header">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1570/1570932.png" alt="Defendant" class="avatar">
+                    <h2>Defendant Arguments</h2>
+                </div>
+                <div id="defendantArguments" class="arguments-list"></div>
+            </div>
+        </div>
+        
+        <div class="verdict-container">
+            <div class="gavel-icon">⚖️</div>
+            <h3>Court's Decision</h3>
+            <div id="verdictText" class="verdict-text"></div>
+        </div>
+    </div>
+
+    <audio id="gavelSound" src="https://assets.mixkit.co/sfx/preview/mixkit-court-gavel-1293.mp3"></audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
