@@ -146,13 +146,12 @@ h1 {
 }
 
 .argument-card h3 {
-    margin-top: 0;
-    color: var(--dark-gray);
-    font-size: 1.2rem;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
 }
 
 .argument-card p {
-    margin-bottom: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Verdict Section */
