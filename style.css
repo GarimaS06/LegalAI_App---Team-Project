@@ -9,12 +9,13 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f8fafc;
-    margin: 0;
-    padding: 0;
-    color: var(--dark-gray);
-    line-height: 1.6;
+  background-image: url('https://www.transparenttextures.com/patterns/pixel-weave.png');
+  background-color: #f8fafc;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--dark-gray);
+  line-height: 1.6;
 }
 
 /* Header Styles */
@@ -70,16 +71,6 @@ h1 {
     flex-wrap: wrap;
 }
 
-button {
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 6px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 1rem;
-}
-
 .primary-btn {
     background-color: var(--lexiq-blue);
     color: white;
@@ -94,11 +85,6 @@ button {
 .tertiary-btn {
     background-color: var(--light-gray);
     color: var(--dark-gray);
-}
-
-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Arguments Container */
@@ -230,4 +216,23 @@ button:hover {
     margin-bottom: 1rem;
     text-align: center;
     font-style: italic;
+}
+
+.pixel-gavel {
+  width: 48px;
+  height: 48px;
+  image-rendering: pixelated;
+  animation: bounce 2s infinite;
+}
+
+button {
+  font-family: 'Press Start 2P', cursive;
+  border: 2px solid black;
+  image-rendering: pixelated;
+  transition: none;
+}
+button:hover {
+  background-color: #ffe066;
+  transform: none;
+  box-shadow: inset 2px 2px 0 black;
 }
